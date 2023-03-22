@@ -1,0 +1,33 @@
+//colors
+$color-white:             rgba(255, 255, 255, 1);
+$color-white-opacity-4:   rgba(255, 255, 255, 0.4);
+$color-white-opacity-1:   rgba(255, 255, 255, 0.1);
+$color-light-gray:        rgba(208, 208, 208, 1);
+$color-gray:              rgba(150, 150, 150, 1);
+$color-dark-gray:         rgba(15, 15, 15, 1);
+$color-dark-gray-hover:   rgba(31, 31, 31, 1);
+$color-black:             rgba(0, 0, 0, 1);
+$color-black-opacity:     rgba(0, 0, 0, .3);
+$color-red:               rgb(86, 0, 0);
+$color-bg-card:           rgba(25, 27, 28, 1);
+
+
+//spacing
+$spacing-ultra-small: 5px;
+$spacing-small:       10px;
+$spacing-medium:      20px;
+$spacing-large:       30px;
+$spacing-ultra-large: 40px;
+
+
+//fonts
+$font-size-ultra-small:  12px;
+$font-size-small:        14px;
+$font-size-normal:       16px;
+$font-size-large:        18px;
+$font-size-ultra-large:  22px;
+$font-size-footer-title: 24px;
+$font-size-title:        36px;
+
+//OTHER
+$transition: .4s;

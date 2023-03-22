@@ -1,0 +1,14 @@
+.button {
+    padding: 28px;
+    color: $color-white;
+    text-transform: uppercase;
+    border: 1px solid $color-white;
+    background-color: transparent;
+    font-size: $font-size-large;
+    line-height: 24px;
+    letter-spacing: 5px;
+    transition-duration: $transition;
+}
+.button:hover {
+    background-color: rgba(0, 0, 0, .4);
+}

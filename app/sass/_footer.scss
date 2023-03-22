@@ -1,0 +1,167 @@
+.footer {
+    &__title {
+        font-size: $font-size-footer-title;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        margin-top: 80px;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-image: -webkit-image-set(
+            url('../img/footer-bg.webp') 1x,
+            url('../img/footer-bg@2x.webp') 2x,
+        );
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__content {
+        max-width: 1110px;
+        min-height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        &-item {
+            height: 100%;
+            display: inline-flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &-item:nth-child(2) {
+            margin: 0 0 0 30px;
+        }
+        &-text {
+            max-width: 350px;
+            font-size: $font-size-small;
+            color: $color-white;
+        }
+    }
+    &__copyright {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-text {
+            margin: 17px 0;
+            font-size: $font-size-ultra-small;
+            color: $color-light-gray;
+        }
+    }
+}
+
+.footer__content-category {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        padding: $spacing-small $spacing-medium;
+        background-color: $color-dark-gray;
+        margin-right: $spacing-medium;
+        margin-bottom: $spacing-medium;
+        transition: $transition;
+    }
+    a:hover {
+        opacity: .6;
+    }
+}
+
+.footer__content-subscribe {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    input {
+        background-color: $color-white-opacity-4;
+        padding: $spacing-small $spacing-medium;
+        color: $color-light-gray;
+        outline: 1px solid transparent;
+        border: 1px solid transparent;
+        transition-duration: $transition;
+    }
+    input::placeholder {
+        color: $color-gray; 
+    }
+    input:hover {
+        box-shadow: -2px 0 2px 2px $color-white-opacity-1;
+        color: $color-light-gray; 
+    }
+    input:focus {
+        box-shadow: -2px 0 2px 2px $color-white-opacity-4;
+    }
+    input:focus::-webkit-input-placeholder {
+        color: $color-light-gray;
+    }
+    button {
+        border: none;
+        background-color: $color-dark-gray;
+        text-transform: uppercase;
+        padding: $spacing-small $spacing-medium;
+        color: $color-white;
+        cursor: pointer;
+        transition: $transition;
+    }
+    button:hover {
+        background-color: $color-red;
+    }
+    button:active {
+        background-color: $color-white-opacity-1;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .footer__content {
+        max-width: 900px;
+    }
+    .footer__title {
+        margin: $spacing-small 0;
+    }
+    .footer__copyright {
+        max-width: 900px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .footer__copyright {
+        max-width: 700px;
+    }
+    .footer__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__content-item {
+        align-items: center;
+        margin: 30px 0;
+    }
+    .footer__content-category {
+            align-items: center;
+            justify-content: center;
+        a {
+            margin: $spacing-small $spacing-ultra-small;
+        }
+    }
+    .footer__content-item:nth-child(2) {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .footer__content-subscribe {
+        flex-direction: column;
+        button {
+            margin-top: $spacing-small;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .footer__content-text {
+        max-width: 250px;
+        font-size: $font-size-ultra-small;
+    }
+}

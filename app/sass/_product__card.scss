@@ -1,0 +1,35 @@
+.product__card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: $spacing-small;
+    transition: $transition;
+    width: fit-content;
+    &-image-block {
+        min-width: 260px;
+        min-height: 325px;
+        background-color: $color-bg-card;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+    }
+    &-name {
+        margin: 25px 0 $spacing-small 0;
+        font-size: $font-size-large;
+        line-height: 21px;
+        text-transform: uppercase;
+    }
+    &-price {
+        margin: 0;
+        font-size: $font-size-normal;
+        color: $color-light-gray;
+    }
+}
+.product__card:hover {
+    background-color: $color-white-opacity-1;
+}
+.product__card:hover > .product__card-image-block{
+    background-color: $color-white-opacity-1;
+}
